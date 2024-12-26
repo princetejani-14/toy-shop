@@ -10,6 +10,18 @@ export default function Shopbykids() {
           mattis urnanullam quis magna ligula maecenas integer.
         </p>
       </div>
+      <div className="container">
+        <div className="shopbt_kids_main">
+          <div className="shopbt_kids_box1">
+              <button>0 - 2 Years</button>
+              <button>3 - 4 Years</button>
+              <button>5 - 7 Years</button>
+              <button>8 - 10 Years</button>
+              <button>10+ Years</button>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }

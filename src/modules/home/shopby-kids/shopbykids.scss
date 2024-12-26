@@ -12,3 +12,48 @@
           margin-bottom: 33px;
      }
 }
+.shopbt_kids_main{
+     margin-bottom: 20px;
+     .shopbt_kids_box1{
+          display: flex;
+          justify-content: center;
+          gap: clamp(8px, 0.625vw, 50px);
+          button{
+               @include btn-white-purpole;
+          }
+     }
+}
+@media(max-width:768px){
+     .shopby_kids_heading{
+          h1{
+               font-size: 29px;
+          }
+          p{
+               width: 722px;
+          }
+     }
+}
+@media(max-width:576px){
+     .shopby_kids_heading{
+          h1{
+               font-size: 28px;
+          }
+          p{
+               width: 348px;
+          }
+     }
+     .shopbt_kids_main{
+          margin-bottom: 20px;
+          padding: 0 28px;
+          .shopbt_kids_box1{
+               // display: grid;
+               // grid-template-columns: repeat(3, 1fr);
+               gap: 5px;
+               button{
+                    @include btn-white-purpole;
+                    width: 92px;
+                    height: 38px;
+               }
+          }
+     }
+}

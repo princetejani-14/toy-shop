@@ -43,3 +43,23 @@
 
     }
 }
+@mixin btn-white-purpole{
+    background-color: var(--button-background-color-white);
+    color: var(--font--color-black);
+    font-family: "Poppins", serif;
+    width: 114px;
+    height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    border: 1px solid var(--border-color-black);
+    border-radius: clamp(4px, 0.417vw, 36px);
+    cursor: pointer;
+
+    &:hover{
+        transition: 0.3s ease-in-out;
+        background-color: #89589f;
+        color: var(--font--color-white);
+        border: 1px solid #89589f;
+    }
+}
