@@ -1,0 +1,14 @@
+@import '../../../scss/main';
+.shopby_kids_heading{
+     text-align: center;
+     padding-top: 61px;
+     h1{
+          @include font-40b;
+          margin-bottom: 14px;
+     }
+     p{
+          width: 500px;
+          @include font-14b;
+          margin-bottom: 33px;
+     }
+}
