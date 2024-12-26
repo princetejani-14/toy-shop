@@ -1,0 +1,606 @@
+@import '../../../scss/main';
+
+.left_arrow {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    background-color: var(--font--color-white);
+    cursor: pointer;
+    z-index: 99;
+
+    &:hover {
+        background-color: var(--font--color-black);
+        color: var(--font--color-white);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.right_arrow {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 44px;
+    height: 44px;
+    background-color: var(--font--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--font--color-black);
+        color: var(--font--color-white);
+        transition: 0.3s ease-in-out;
+    }
+
+}
+
+.herobaner_main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    .herobaner_img_left {
+        width: 325px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .herobaner_img_center {
+        width: 675px;
+        height: 550px;
+
+        .herobaner_center_main {
+            position: relative;
+
+            .herobaner_center_main_bg {
+                height: 550px;
+                background-color: #e40878;
+                border-radius: clamp(12px, 0.833vw, 64px);
+            }
+
+            .herobaner_center_main_text {
+                position: absolute;
+                top: 18%;
+                padding: 20px 20px 0 20px;
+
+                .herobaner_center_main_text_top {
+                    @include font-15b;
+                    background-color: #fecd00;
+                    width: 102px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: clamp(2px, 0.208vw, 28px);
+
+                }
+
+                .herobaner_center_main_text_center {
+                    h1 {
+                        font-size: 48.79px;
+                        margin-top: 12px;
+                        font-weight: 700;
+                        letter-spacing: -2.85px;
+                        line-height: 120%;
+                        margin-bottom: 14px;
+                        color: var(--font--color-white);
+                    }
+
+                    p {
+                        @include font-14w;
+                        letter-spacing: 0px;
+                        margin-bottom: 25.60px;
+                    }
+
+                }
+
+                .herobaner_center_main_text_button {
+                    display: flex;
+                    gap: 10px;
+
+                    .herobaner_center_main_text_button_left {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        justify-content: center;
+                        @include btn-white-transpernt;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .right_arrow_herobaner {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .herobaner_center_main_text_button_right {
+                        button {
+                            @include btn-transpernt-white;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .herobaner_center_main2 {
+            position: relative;
+
+            .herobaner_center_main_bg {
+                height: 550px;
+                background-color: #89589f;
+                border-radius: clamp(12px, 0.833vw, 64px);
+            }
+
+            .herobaner_center_main_text {
+                position: absolute;
+                top: 18%;
+                padding: 20px 20px 0 20px;
+
+                .herobaner_center_main_text_top {
+                    @include font-15b;
+                    background-color: #fecd00;
+                    width: 102px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: clamp(2px, 0.208vw, 28px);
+
+                }
+
+                .herobaner_center_main_text_center {
+                    h1 {
+                        font-size: 48.79px;
+                        margin-top: 12px;
+                        font-weight: 700;
+                        letter-spacing: -2.85px;
+                        line-height: 120%;
+                        margin-bottom: 14px;
+                        color: var(--font--color-white);
+                    }
+
+                    p {
+                        @include font-14w;
+                        letter-spacing: 0px;
+                        margin-bottom: 25.60px;
+                    }
+
+                }
+
+                .herobaner_center_main_text_button {
+                    display: flex;
+                    gap: 10px;
+
+                    .herobaner_center_main_text_button_left {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        justify-content: center;
+                        @include btn-white-transpernt;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .right_arrow_herobaner {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .herobaner_center_main_text_button_right {
+                        button {
+                            @include btn-transpernt-white;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .herobaner_center_main3 {
+            position: relative;
+
+            .herobaner_center_main_bg {
+                height: 550px;
+                background-color: #3da5d5;
+
+                border-radius: clamp(12px, 0.833vw, 64px);
+            }
+
+            .herobaner_center_main_text {
+                position: absolute;
+                top: 18%;
+                padding: 20px 20px 0 20px;
+
+                .herobaner_center_main_text_top {
+                    @include font-15b;
+                    background-color: #fecd00;
+                    width: 102px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: clamp(2px, 0.208vw, 28px);
+
+                }
+
+                .herobaner_center_main_text_center {
+                    h1 {
+                        font-size: 48.79px;
+                        margin-top: 12px;
+                        font-weight: 700;
+                        letter-spacing: -2.85px;
+                        line-height: 120%;
+                        margin-bottom: 14px;
+                        color: var(--font--color-white);
+                    }
+
+                    p {
+                        @include font-14w;
+                        letter-spacing: 0px;
+                        margin-bottom: 25.60px;
+                    }
+
+                }
+
+                .herobaner_center_main_text_button {
+                    display: flex;
+                    gap: 10px;
+
+                    .herobaner_center_main_text_button_left {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        justify-content: center;
+                        @include btn-white-transpernt;
+
+                        p {
+                            margin: 0;
+                        }
+
+                        .right_arrow_herobaner {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .herobaner_center_main_text_button_right {
+                        button {
+                            @include btn-transpernt-white;
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+    .herobaner_img_right {
+        width: 325px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.herobaner_main2 {
+    .herobaner_main2_left {
+        display: none;
+    }
+
+    .herobaner_main2_right {
+        display: none;
+
+    }
+}
+
+@media(max-width:768px) {
+    .herobaner_main {
+        justify-content: center;
+
+        .herobaner_img_left {
+            display: none;
+        }
+
+        .herobaner_img_center {
+            width: 723px;
+            height: 385px;
+
+            .herobaner_center_main {
+
+
+                .herobaner_center_main_bg {
+                    height: 385px;
+                }
+
+                .herobaner_center_main_text {
+                    top: 14%;
+
+                    .herobaner_center_main_text_top {
+                        width: 99px;
+                        height: 29px;
+
+                    }
+
+                    .herobaner_center_main_text_center {
+                        h1 {
+                            font-size: 35px;
+                            margin-bottom: 11px;
+                        }
+
+                        p {
+
+                            margin-bottom: 24px;
+                        }
+
+                    }
+                }
+
+            }
+
+            .herobaner_center_main2 {
+
+
+                .herobaner_center_main_bg {
+                    height: 385px;
+                }
+
+                .herobaner_center_main_text {
+                    top: 14%;
+
+
+                    .herobaner_center_main_text_top {
+                        width: 99px;
+                        height: 29px;
+
+                    }
+
+                    .herobaner_center_main_text_center {
+                        h1 {
+                            font-size: 35px;
+                            margin-bottom: 11px;
+                        }
+
+                        p {
+
+                            margin-bottom: 24px;
+                        }
+
+                    }
+                }
+
+            }
+
+            .herobaner_center_main3 {
+
+
+                .herobaner_center_main_bg {
+                    height: 385px;
+                }
+
+                .herobaner_center_main_text {
+                    top: 14%;
+
+                    .herobaner_center_main_text_top {
+                        width: 99px;
+                        height: 29px;
+
+                    }
+
+                    .herobaner_center_main_text_center {
+                        h1 {
+                            font-size: 35px;
+                            margin-bottom: 11px;
+                        }
+
+                        p {
+
+                            margin-bottom: 24px;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        .herobaner_img_right {
+            display: none;
+        }
+    }
+
+    .left_arrow {
+        bottom: 7%;
+        left: 3%;
+    }
+
+    .right_arrow {
+        bottom: 7%;
+        right: 3%;
+    }
+
+    .herobaner_main2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 21px;
+
+        .herobaner_main2_left {
+            display: block;
+
+            img {
+                object-fit: cover;
+                width: 349px;
+                height: 385px;
+                border-radius: clamp(8px, 0.625vw, 48px);
+            }
+        }
+
+        .herobaner_main2_right {
+            display: block;
+
+            img {
+                object-fit: cover;
+                border-radius: clamp(8px, 0.625vw, 48px);
+                width: 349px;
+                height: 385px;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .herobaner_main {
+
+        .herobaner_img_center {
+            width: 349px;
+            height: 313px;
+
+            .herobaner_center_main {
+
+
+                .herobaner_center_main_bg {
+                    height: 313px;
+                }
+
+                .herobaner_center_main_text {
+                    top: 14%;
+
+                    .herobaner_center_main_text_top {
+                        width: 99px;
+                        height: 29px;
+
+                    }
+
+                    .herobaner_center_main_text_center {
+                        margin-bottom: 30px;
+                        h1 {
+                            font-size: 32px;
+                            margin-bottom: 11px;
+                        }
+
+                        p {
+                            display: none;
+                        }
+
+                    }
+                }
+
+            }
+
+            .herobaner_center_main2 {
+
+
+                .herobaner_center_main_bg {
+                    height: 313px;
+                }
+
+                .herobaner_center_main_text {
+                    top: 14%;
+
+
+                    .herobaner_center_main_text_top {
+                        width: 99px;
+                        height: 29px;
+
+                    }
+
+                    .herobaner_center_main_text_center {
+                        margin-bottom: 30px;
+                        h1 {
+                            font-size: 32px;
+                            margin-bottom: 11px;
+                        }
+
+                        p {
+                            display: none;
+                        }
+
+                    }
+                }
+
+            }
+
+            .herobaner_center_main3 {
+
+
+                .herobaner_center_main_bg {
+                    height: 313px;
+                }
+
+                .herobaner_center_main_text {
+                    top: 14%;
+
+                    .herobaner_center_main_text_top {
+                        width: 99px;
+                        height: 29px;
+
+                    }
+
+                    .herobaner_center_main_text_center{
+                        margin-bottom: 30px;
+                        h1 {
+                            font-size: 32px;
+                            margin-bottom: 11px;
+                        }
+
+                        p {
+                            display: none;
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+        .left_arrow {
+            display: none;
+        }
+
+        .right_arrow {
+            display: none;
+        }
+    }
+
+
+    .herobaner_main2 {
+        .herobaner_main2_left {
+
+
+            img {
+                width: 168px;
+                height: 274px;
+            }
+        }
+
+        .herobaner_main2_right {
+            img {
+                width: 168px;
+                height: 274px;
+            }
+        }
+    }
+}

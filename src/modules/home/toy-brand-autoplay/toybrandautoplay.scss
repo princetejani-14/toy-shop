@@ -1,0 +1,37 @@
+.autoplay_slider_main {
+    margin: 64px 0 31px 0;
+
+    .autoplay_img {
+        img {
+            width: 215px;
+            height: 64px;
+        }
+    }
+}
+@media(max-width:768px){
+    .autoplay_slider_main {
+        margin: 0 auto;
+        padding: 31px 0 31px 0;
+        max-width: 700px;
+        .autoplay_img {
+            img {
+                width: 180px;
+                height: 54px;
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .autoplay_slider_main {
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 31px 0 31px 0;
+    
+        .autoplay_img {
+            img {
+                width: 117px;
+                height: 35px;
+            }
+        }
+    }
+}

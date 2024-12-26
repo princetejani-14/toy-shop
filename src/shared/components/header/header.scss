@@ -1,0 +1,248 @@
+@import '../../../scss/main';
+.toy_shop_header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15.83px 0;
+
+    .toy_shop_header_left {
+        cursor: pointer;
+
+        img {
+            width: 140px;
+            height: 45px;
+        }
+    }
+
+    .toy_shop_header_center {
+        display: flex;
+        align-items: center;
+
+        .toy_shop_header_center_left {
+            width: 537px;
+            padding: 10px 10px 10px 10px;
+            border: 2px solid #92949f;
+            border-radius: 6px 0 0 6px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .toy_shop_header_center_left_img {
+                width: 17px;
+                height: 17px;
+                color: #92949f;
+            }
+
+            input {
+                border: 0px;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0.32px;
+            }
+        }
+
+        .toy_shop_header_center_right {
+            button {
+                font-family: "Poppins", serif;
+                border-radius: 0 6px 6px 0;
+                border: 0px;
+                height: 49px;
+                cursor: pointer;
+                margin-left: -5px;
+                color: white;
+                width: 90px;
+                background-color: black;
+                font-size: 15px;
+                letter-spacing: 0.35px;
+                font-weight: 400;
+            }
+
+            :hover {
+                background-color: #fd7e14;
+                ;
+                transition: 0.5s ease-in-out;
+            }
+        }
+
+    }
+
+    .toy_shop_header_right {
+        display: flex;
+        gap: 15px;
+
+        .toy_shop_header_right_like_img {
+            cursor: pointer;
+
+            .toy_shop_header_right_like_img_heart {
+                width: 25px;
+                height: 25px;
+            }
+
+        }
+
+        .toy_shop_header_right_center_border {
+            height: 25px;
+            width: 0;
+            border: 1px solid black;
+            color: black;
+
+        }
+
+        .toy_shop_header_right_cart_img {
+            cursor: pointer;
+
+            .toy_shop_header_right_cart_img_cart {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .toy_shop_header_right_text {
+            cursor: pointer;
+
+            p {
+                color: #0f0f0f;
+                font-size: 12px;
+                font-weight: 400;
+                &:hover {
+                    color: #fd7e14;
+                    transition: ease-in-out 0.3s;
+                }
+            }
+
+
+            h1 {
+                color: #0f0f0f;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.bg_header_bottom {
+    background-color: #f7f7f3;
+    .header_main2 {
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header_main2_left {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            @include font-15b;
+            cursor: pointer;
+            :hover {
+                color: #fd7e14;
+                transition: ease-in-out 0.3s;
+            }
+            p {
+                margin: 0;
+            }
+
+            .shop-drop {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .blog-drop {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+
+            }
+
+        }
+
+        .header_main2_right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .header_main_icone{
+                .header_main_icone_telephone{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .header_main_text{
+                @include font-14b;
+            }
+        }
+        .header_main2_right_responsive{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .toy_shop_header_main {
+        padding: 14px 16px;
+
+        .toy_shop_header_left {
+            img {
+                width: 103px;
+                height: 33.67px;
+            }
+        }
+
+        .toy_shop_header_center {
+            display: none;
+        }
+
+    }
+    .bg_header_bottom {
+        background-color: #f7f7f3;
+        .header_main2 {
+            padding: 8px 18px;
+    
+            .header_main2_left {
+                display: none;
+                
+    
+            }
+    
+            .header_main2_right{
+                display: flex;
+                gap: 10px;
+                .header_main_icone{
+                    .header_main_icone_telephone{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .header_main_text{
+                    @include font-14b;
+                }
+            }
+            .header_main2_right_responsive{
+                display: block;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .header_main_icone_resposive{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #0f0f0f;
+                    
+                }
+                .header_main_text_resposive{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .header_main_text_resposive_threeline{
+                        width: 30px;
+                        height: 30px;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+}
