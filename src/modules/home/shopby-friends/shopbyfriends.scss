@@ -1,10 +1,15 @@
+@import '../../../scss/main';
+
 .shopby_friends_main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
     .shopby_friends_box1 {
-        border: 1px solid black;
+        border: 1px solid #92949f;
+        border-radius: clamp(12px, 0.833vw, 64px);
         padding: 12.65px;
+        position: relative;
+
         .shopby_friends_box1_img {
             overflow: hidden;
             border: 1px solid white;
@@ -29,6 +34,87 @@
             }
         }
 
-        
+        .shopby_friends_box1_img_upper_left {
+            position: absolute;
+            top: 12%;
+            left: 8%;
+            background-color: #fecd00;
+            width: 47px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+
+            p {
+                @include font-14b;
+            }
+
+        }
+
+        .shopby_friends_box1_img_upper_right {
+            position: absolute;
+            top: 12%;
+            right: 8%;
+            display: flex;
+            flex-direction: column;
+            column-gap: 7px;
+            display: none;
+            transition: 8s ease-in-out;
+
+            .heart_icone {
+                border: 1px solid black;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .heart {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+
+            .eyes_icone {
+                border: 1px solid black;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .eyes {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+
+            .revers_icone {
+                border: 1px solid black;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .revers {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+
+        }
+
+        &:hover {
+            .shopby_friends_box1_img_upper_right {
+                display: block;
+                transition: 8s ease-in-out;
+                display: flex;
+                gap: 5px;
+            }
+
+        }
+
+
     }
 }
