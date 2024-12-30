@@ -3,6 +3,7 @@
 .shopby_friends_main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 
     .shopby_friends_box1 {
         border: 1px solid #92949f;
@@ -160,12 +161,32 @@
             display: flex;
             align-items: center;
             gap: 5px;
+            margin-bottom: 18px;
             p{
                 @include font-18b;
                 margin: 0;
             }
             del{
                 @include font-14dg;
+            }
+        }
+        .shopby_friends_box1_bottom_cart_button{
+            display: flex;
+            gap: 5px;
+            .shopby_friends_box1_bottom_cart_button_left{
+                display: flex;
+                width: 121px;
+                height: 43px;
+                align-items: center;
+                background-color: #f7f3f3;
+                border-radius: clamp(2px, 0.208vw, 28px);
+
+            }
+            .shopby_friends_box1_bottom_cart_button_right{
+                button{
+                    @include btn-gray-orange;
+                }
+
             }
         }
 

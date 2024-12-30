@@ -63,3 +63,23 @@
         border: 1px solid #89589f;
     }
 }
+@mixin btn-gray-orange{
+    background-color: #f3f3f7;
+    color: var(--font--color-black);
+    font-family: "Poppins", serif;
+    width: 121px;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #f3f3f7;
+    border-radius: clamp(2px, 0.208vw, 28px);
+
+    &:hover{
+        transition: 0.3s ease-in-out;
+        background-color: #fc6102;
+        color: var(--font--color-white);
+        border: 1px solid #fc6102;
+    }
+
+}
