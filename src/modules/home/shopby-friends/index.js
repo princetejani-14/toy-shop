@@ -4,6 +4,7 @@ import img1 from '../../../assets/image/shopby-friends-img1.png'
 import img2 from '../../../assets/image/shopby-friends-img2.png'
 import img3 from '../../../assets/image/shopby-friends-img3.png'
 import img4 from '../../../assets/image/shopby-friends-img4.png'
+import { IoMdStar } from "react-icons/io";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa6";
 
@@ -29,11 +30,36 @@ export default function Shopbyfriends() {
                                 <IoMdHeartEmpty className='heart' />
                             </div>
                             <div className='eyes_icone'>
-                                <FaRegEye className='eyes'/>
+                                <FaRegEye className='eyes' />
                             </div>
                             <div className='revers_icone'>
-                            <BiRefresh  className='revers'/>
+                                <BiRefresh className='revers' />
                             </div>
+                        </div>
+                        <div className='shopby_friends_box1_bottom_star_main'>
+                            <div className='shopby_friends_box1_bottom_star'>
+                                <IoMdStar className='star1' />
+                                <IoMdStar className='star1' />
+                                <IoMdStar className='star1' />
+                                <IoMdStar className='star1' />
+                                <IoMdStar className='star2' />
+                            </div>
+                            <div className='shopby_friends_box1_bottom_star_flex'>
+                                <p>(02)</p>
+                            </div>
+
+
+                        </div>
+                        <div className='shopby_friends_box1_bottom_data'>
+                            <h1>Huggable Friends</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur. Id viverra cursus enim risus mattis urnanullam</p>
+                        </div>
+                        <div className='shopby_friends_box1_bottom_prize'>
+                            <p>$18.00</p>
+                            <del>$20.00</del>
+                        </div>
+                        <div className='shopby_friends_box1_bottom_cart_button'>
+
                         </div>
 
                     </div>
