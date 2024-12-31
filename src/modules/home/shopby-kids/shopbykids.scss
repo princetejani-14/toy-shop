@@ -46,12 +46,12 @@
           margin-bottom: 20px;
           padding: 0 28px;
           .shopbt_kids_box1{
-               // display: grid;
-               // grid-template-columns: repeat(3, 1fr);
-               gap: 5px;
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               gap: 6px;
                button{
                     @include btn-white-purpole;
-                    width: 92px;
+                    width: 100px;
                     height: 38px;
                }
           }

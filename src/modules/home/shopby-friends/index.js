@@ -73,7 +73,7 @@ export default function Shopbyfriends() {
                     </div>
                     <div className='shopby_friends_box1'>
                         <div className='shopby_friends_box1_img'>
-                            <img src={img1} />
+                            <img src={img2} />
                         </div>
                         <div className='shopby_friends_box1_img_upper_left'>
                             <p>-16%</p>
@@ -104,7 +104,7 @@ export default function Shopbyfriends() {
 
                         </div>
                         <div className='shopby_friends_box1_bottom_data'>
-                            <h1>Huggable Friends</h1>
+                            <h1>Snuggle Buddies</h1>
                             <p>Lorem ipsum dolor sit amet consectetur. Id viverra cursus enim risus mattis urnanullam</p>
                         </div>
                         <div className='shopby_friends_box1_bottom_prize'>
@@ -126,7 +126,7 @@ export default function Shopbyfriends() {
                     </div>
                     <div className='shopby_friends_box1'>
                         <div className='shopby_friends_box1_img'>
-                            <img src={img1} />
+                            <img src={img3} />
                         </div>
                         <div className='shopby_friends_box1_img_upper_left'>
                             <p>-16%</p>
@@ -157,7 +157,7 @@ export default function Shopbyfriends() {
 
                         </div>
                         <div className='shopby_friends_box1_bottom_data'>
-                            <h1>Huggable Friends</h1>
+                            <h1>Cuddle Companions</h1>
                             <p>Lorem ipsum dolor sit amet consectetur. Id viverra cursus enim risus mattis urnanullam</p>
                         </div>
                         <div className='shopby_friends_box1_bottom_prize'>
@@ -179,7 +179,7 @@ export default function Shopbyfriends() {
                     </div>
                     <div className='shopby_friends_box1'>
                         <div className='shopby_friends_box1_img'>
-                            <img src={img1} />
+                            <img src={img4} />
                         </div>
                         <div className='shopby_friends_box1_img_upper_left'>
                             <p>-16%</p>
@@ -210,7 +210,7 @@ export default function Shopbyfriends() {
 
                         </div>
                         <div className='shopby_friends_box1_bottom_data'>
-                            <h1>Huggable Friends</h1>
+                            <h1>Plush Toy Friends</h1>
                             <p>Lorem ipsum dolor sit amet consectetur. Id viverra cursus enim risus mattis urnanullam</p>
                         </div>
                         <div className='shopby_friends_box1_bottom_prize'>

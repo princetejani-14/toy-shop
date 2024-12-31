@@ -64,15 +64,15 @@
     }
 }
 @mixin btn-gray-orange{
-    background-color: #f3f3f7;
+    background-color: #f7f3f3;
     color: var(--font--color-black);
     font-family: "Poppins", serif;
-    width: 121px;
+    width: 146px;
     height: 43px;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
-    border: 1px solid #f3f3f7;
+    border: 1px solid #f7f3f3;
     border-radius: clamp(2px, 0.208vw, 28px);
 
     &:hover{

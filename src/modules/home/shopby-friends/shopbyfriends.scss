@@ -4,6 +4,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+    margin-top: 45px;
+    padding-bottom: 31px;
 
     .shopby_friends_box1 {
         border: 1px solid #92949f;
@@ -26,19 +28,19 @@
                 border-radius: 7px;
                 background: #F7F3F3;
 
-                &:hover {
-                    transform: scale(1.1);
-                    transition: 0.3s ease-in-out;
-                    border-radius: 7px;
+                // &:hover {
+                //     transform: scale(1.1);
+                //     transition: 0.3s ease-in-out;
+                //     border-radius: 7px;
 
-                }
+                // }
             }
         }
 
         .shopby_friends_box1_img_upper_left {
             position: absolute;
-            top: 12%;
-            left: 8%;
+            top: 6%;
+            left: 9%;
             background-color: #fecd00;
             width: 47px;
             height: 24px;
@@ -54,7 +56,7 @@
 
         .shopby_friends_box1_img_upper_right {
             position: absolute;
-            top: 12%;
+            top: 5%;
             right: 8%;
             display: flex;
             flex-direction: column;
@@ -98,6 +100,7 @@
                     width: 21px;
                     height: 21px;
                 }
+
                 &:hover {
                     background-color: #fc6102;
                     color: #fff;
@@ -120,6 +123,7 @@
                     width: 21px;
                     height: 21px;
                 }
+
                 &:hover {
                     background-color: #fc6102;
                     color: #fff;
@@ -130,60 +134,74 @@
             }
 
         }
-        .shopby_friends_box1_bottom_star_main{
+
+        .shopby_friends_box1_bottom_star_main {
             display: flex;
             margin-top: 14px;
-            .shopby_friends_box1_bottom_star{
-                .star1{
+
+            .shopby_friends_box1_bottom_star {
+                .star1 {
                     color: #fc6102;
                 }
-                .star2{
+
+                .star2 {
                     color: #92949f;
                 }
             }
-            .shopby_friends_box1_bottom_star_flex{
+
+            .shopby_friends_box1_bottom_star_flex {
                 @include font-14b;
             }
         }
-        .shopby_friends_box1_bottom_data{
-            h1{
+
+        .shopby_friends_box1_bottom_data {
+            h1 {
                 @include font-22b;
-                &:hover{
+                cursor: pointer;
+
+                &:hover {
                     color: #fc6102;
                     transition: 0.3s ease-in-out;
                 }
             }
-            p{
+
+            p {
                 @include font-14dg;
             }
         }
-        .shopby_friends_box1_bottom_prize{
+
+        .shopby_friends_box1_bottom_prize {
             display: flex;
             align-items: center;
             gap: 5px;
             margin-bottom: 18px;
-            p{
+
+            p {
                 @include font-18b;
                 margin: 0;
             }
-            del{
+
+            del {
                 @include font-14dg;
             }
         }
-        .shopby_friends_box1_bottom_cart_button{
+
+        .shopby_friends_box1_bottom_cart_button {
             display: flex;
             gap: 5px;
-            .shopby_friends_box1_bottom_cart_button_left{
+
+            .shopby_friends_box1_bottom_cart_button_left {
                 display: flex;
-                width: 121px;
+                width: 146px;
                 height: 43px;
                 align-items: center;
                 background-color: #f7f3f3;
                 border-radius: clamp(2px, 0.208vw, 28px);
 
             }
-            .shopby_friends_box1_bottom_cart_button_right{
-                button{
+
+            .shopby_friends_box1_bottom_cart_button_right {
+                button {
                     @include btn-gray-orange;
                 }
 
@@ -200,6 +218,57 @@
 
         }
 
+        &:hover {
+            .shopby_friends_box1_img {
+                img {
+                    transform: scale(1.1);
+                    transition: 0.6s ease-in-out;
+                    border-radius: 7px;
+                }
+            }
+        }
 
+
+    }
+}
+
+@media(max-width:768px) {
+    .shopby_friends_main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 18px;
+
+        .shopby_friends_box1 {
+            .shopby_friends_box1_bottom_cart_button {
+                .shopby_friends_box1_bottom_cart_button_left {
+                    width: 160px;
+                }
+
+                .shopby_friends_box1_bottom_cart_button_right{
+                    button{
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px) {
+    .shopby_friends_main {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 18px;
+
+        .shopby_friends_box1 {
+            .shopby_friends_box1_bottom_cart_button {
+                .shopby_friends_box1_bottom_cart_button_left {
+                    width: 160px;
+                }
+
+                .shopby_friends_box1_bottom_cart_button_right{
+                    button{
+                        width: 160px;
+                    }
+                }
+            }
+        }
     }
 }

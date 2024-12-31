@@ -1,0 +1,247 @@
+@import '../../../scss/main';
+.free_shiping_main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    justify-content: space-between;
+    padding: 31px 0;
+
+    .free_shiping_box1 {
+        height: 116px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px;
+        gap: clamp(12px, 0.833vw, 72px);
+        background-color: #bee1f1;
+        border-radius: clamp(8px, 0.625vw, 48px) !important;
+        .free_shiping_box1_img {
+            background-color: #9ed2ea;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .free_shiping_box1_text {
+            width: 208px;
+            h1{
+                @include font-22b;
+                letter-spacing: 0;
+            }
+            p{
+                @include font-14sg;
+                letter-spacing: 0;
+            }
+        }
+    }
+    .free_shiping_box2 {
+        height: 116px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px;
+        gap: clamp(12px, 0.833vw, 72px);
+        background-color: #fdc9e4;
+        border-radius: clamp(8px, 0.625vw, 48px) !important;
+        .free_shiping_box1_img2 {
+            background-color: #fb98cb;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .free_shiping_box1_text2 {
+            width: 208px;
+            h1{
+                @include font-22b;
+                letter-spacing: 0;
+            }
+            p{
+                @include font-14sg;
+                letter-spacing: 0;
+            }
+        }
+    }
+    .free_shiping_box3 {
+        height: 137px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px;
+        gap: clamp(12px, 0.833vw, 72px);
+        background-color: #FECAAB;
+        border-radius: clamp(8px, 0.625vw, 48px) !important;
+        .free_shiping_box1_img3 {
+            background-color: #FEB081;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .free_shiping_box1_text3 {
+            width: 208px;
+            h1{
+                @include font-22b;
+                letter-spacing: 0;
+            }
+            p{
+                @include font-14sg;
+                letter-spacing: 0;
+            }
+        }
+    }
+    .free_shiping_box4{
+        height: 137px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px;
+        gap: clamp(12px, 0.833vw, 72px);
+        background-color: #D8C7DF;
+        border-radius: clamp(8px, 0.625vw, 48px) !important;
+        .free_shiping_box1_img4 {
+            background-color: #C4ACCF;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .free_shiping_box1_text4{
+            width: 208px;
+            h1{
+                @include font-22b;
+                letter-spacing: 0;
+            }
+            p{
+                @include font-14sg;
+                letter-spacing: 0;
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .free_shiping_main{
+        grid-template-columns: repeat(2,1fr);
+        padding: 31px 18px;
+        .free_shiping_box1{
+            height: 96px;
+            padding: 12px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+        .free_shiping_box2{
+            height: 96px;
+            padding: 12px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text2{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+        .free_shiping_box3{
+            height: 96px;
+            padding: 12px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text3{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+        .free_shiping_box4{
+            height: 96px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text4{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .free_shiping_main{
+        grid-template-columns: repeat(1,1fr);
+        padding: 31px 18px;
+        .free_shiping_box1{
+            height: 96px;
+            padding: 12px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+        .free_shiping_box2{
+            height: 96px;
+            padding: 12px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text2{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+        .free_shiping_box3{
+            height: 96px;
+            padding: 12px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text3{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+        .free_shiping_box4{
+            height: 96px;
+            justify-content: flex-start;
+            gap: clamp(12px, 0.833vw, 72px);
+            .free_shiping_box1_text4{
+                h1{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}

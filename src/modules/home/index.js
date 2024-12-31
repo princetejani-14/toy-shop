@@ -5,6 +5,7 @@ import Toybrand_autoplay from './toy-brand-autoplay'
 import Ourplayful from './Our-playful'
 import Shopbykids from './shopby-kids'
 import Shopbyfriends from './shopby-friends'
+import Free_shiping from './free-shiping'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Ourplayful/> 
         <Shopbykids/>
         <Shopbyfriends/>
+        <Free_shiping/>
       
     </div>
   )
