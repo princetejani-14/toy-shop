@@ -1,0 +1,205 @@
+@import '../../../scss/main';
+
+.top_colecction_heading {
+    text-align: center;
+    padding-top: 31px;
+
+    h1 {
+        @include font-40b;
+    }
+
+    p {
+        @include font-14sg;
+        width: 500px;
+        margin-bottom: 31px;
+    }
+}
+
+.top_colecction_box_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    .top_colecction_box1 {
+        width: 441px;
+        position: relative;
+
+        .top_colecction_box1_bg_img {
+            img {
+                border-radius: clamp(8px, 0.625vw, 48px);
+                width: 100%;
+                height: 216px;
+                object-fit: cover;
+            }
+        }
+
+        .top_colecction_box1_img_main {
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            width: 189px;
+
+            img {
+                width: 189px;
+                height: 178px;
+            }
+
+        }
+
+        .top_colecction_box1_text {
+
+            position: absolute;
+            top: 12%;
+            left: 5%;
+
+            h6 {
+                @include font-15b;
+                margin: 0;
+                background-color: #fecd00;
+                width: 105px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 0px;
+                text-align: center;
+                border-radius: clamp(2px, 0.208vw, 28px);
+            }
+
+            h1 {
+                cursor: pointer;
+                @include font-36w;
+                margin: 10px 0;
+
+                &:hover {
+                    color: #fecd00;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            p {
+                @include font-14w;
+                width: 187px;
+
+            }
+
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .top_colecction_heading {
+        padding: 0 18px;
+        h1{
+            padding-bottom: 11px;
+        }
+        p {
+            width: 722px;
+            margin: 0;
+            padding-bottom: 24px;
+        }
+    }
+
+    .top_colecction_box_main {
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 23px;
+        .top_colecction_box1 {
+            width: 722px;
+            .top_colecction_box1_bg_img {
+                img {
+                    height: 341px;
+                }
+            }
+    
+            .top_colecction_box1_img_main {
+                top: 2%;
+                right: 5%;
+                width: 337px;
+    
+                img {
+                    width: 100%;
+                    height: 317px;
+                }
+    
+            }
+    
+            .top_colecction_box1_text {
+                top: 25%;
+                left: 2%;
+    
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .top_colecction_heading {
+        padding: 0 18px;
+        h1{
+            padding-bottom: 11px;
+        }
+        p {
+            width: 348px;
+            margin: 0;
+            padding-bottom: 24px;
+        }
+    }
+
+    .top_colecction_box_main {
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 16px;
+        .top_colecction_box1 {
+            width: 360px;
+            .top_colecction_box1_bg_img {
+                img {
+                    height: 454px;
+                }
+            }
+    
+            .top_colecction_box1_img_main {
+                top: 30%;
+                right: 5%;
+                width: 324px;
+    
+                img {
+                    width: 100%;
+                    height: 305px;
+                }
+    
+            }
+    
+            .top_colecction_box1_text {
+                top: 4%;
+                left: 5%;
+                h6 {
+                    @include font-15b;
+                    margin: 0;
+                    background-color: #fecd00;
+                    width: 105px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 0px;
+                    text-align: center;
+                    border-radius: clamp(2px, 0.208vw, 28px);
+                }
+    
+                h1 {
+                    font-size: 25px;
+                    &:hover {
+                        color: #fecd00;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+    
+                p {
+                    @include font-14w;
+                    width: 187px;
+    
+                }
+    
+            }
+        }
+    }
+
+}

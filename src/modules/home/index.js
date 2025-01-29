@@ -6,6 +6,7 @@ import Ourplayful from './Our-playful'
 import Shopbykids from './shopby-kids'
 import Shopbyfriends from './shopby-friends'
 import Free_shiping from './free-shiping'
+import Top_colecction from './top_colection'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Shopbykids/>
         <Shopbyfriends/>
         <Free_shiping/>
+        <Top_colecction/>
       
     </div>
   )
