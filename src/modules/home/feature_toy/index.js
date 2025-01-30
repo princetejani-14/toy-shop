@@ -13,10 +13,15 @@ import { IoMdHeartEmpty } from "react-icons/io";
 import { FaRegEye } from "react-icons/fa6";
 import { BiRefresh } from "react-icons/bi";
 export default function Feature_toy() {
-  return (
-    <div>
-        <div className='container'>
-        <div className='feature_toy_main'>
+    return (
+        <div>
+            <div className='container'>
+                <div className='feature_toy_main_heading'>
+                    <h1>Featured Toys</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur. Id viverra cursus enim risus
+                        mattis urnanullam quis magna ligula maecenas integer.</p>
+                </div>
+                <div className='feature_toy_main'>
                     <div className='shopby_friends_box1'>
                         <div className='shopby_friends_box1_img'>
                             <img src={img1} />
@@ -443,8 +448,8 @@ export default function Feature_toy() {
                     </div>
 
                 </div>
+            </div>
+
         </div>
-      
-    </div>
-  )
+    )
 }

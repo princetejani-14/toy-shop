@@ -8,6 +8,8 @@ import Shopbyfriends from './shopby-friends'
 import Free_shiping from './free-shiping'
 import Top_colecction from './top_colection'
 import Feature_toy from './feature_toy'
+import Kidslove_us from './kids-love-us'
+import Newsartical from './news-artical'
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         <Free_shiping/>
         <Top_colecction/>
         <Feature_toy/>
+        <Kidslove_us/>
+        <Newsartical/>
       
     </div>
   )

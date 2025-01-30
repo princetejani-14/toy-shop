@@ -1,0 +1,34 @@
+@import '../../../scss/main';
+
+.newsartical_heading {
+    text-align: center;
+    padding-top: 50px;
+    h1 {
+        @include font-40b;
+    }
+    p{
+        @include font-14sg;
+        width: 500px;
+    }
+}
+@media(max-width:768px){
+    .newsartical_heading{
+        h1{
+            font-size: 29px;
+        }
+        p{
+            width: 722px;
+        }
+    }
+}
+@media(max-width:576px){
+    .newsartical_heading{
+        padding-top: 31px;
+        h1{
+            font-size: 28px;
+        }
+        p{
+            width: 348px;
+        }
+    }
+}

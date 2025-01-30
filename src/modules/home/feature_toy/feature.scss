@@ -1,5 +1,14 @@
 @import '../../../scss/main';
-
+.feature_toy_main_heading{
+    text-align: center;
+    h1{
+        @include font-40b;
+    }
+    p{
+        width: 500px;
+        @include font-14sg;
+    }
+}
 .feature_toy_main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -253,10 +262,19 @@
     }
 }
 @media(max-width:576px) {
+    .feature_toy_main_heading{
+        padding-top: 31px;
+        h1{
+            font-size: 28px;
+        }
+        p{
+            width: 348px;
+        }
+    }
     .feature_toy_main {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 18px;
-
+        margin-top: 20px;
         .shopby_friends_box1 {
             .shopby_friends_box1_bottom_cart_button {
                 .shopby_friends_box1_bottom_cart_button_left {
