@@ -1,0 +1,241 @@
+@import '../../../scss/main';
+
+.footer_top_img {
+    margin-top: 70px;
+    height: 64px;
+    width: 1526px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer_main {
+    background-color: #89589f;
+    padding-top: clamp(28px, 2.083vw, 80px);
+
+    .footer_heading {
+        text-align: center;
+        @include font-36w;
+        padding-bottom: 31px;
+    }
+
+    .footer_top_image {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: clamp(18px, 1.25vw, 106px);
+        padding-bottom: 38px;
+
+        .footer_top_img1 {
+            width: 212px;
+            height: 159px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: clamp(4px, 0.417vw, 36px);
+            }
+        }
+    }
+
+    .footer_bottom_part {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+        .footer_bottom_part_left {
+            width: 441px;
+
+            .footer_bottom_left_top_data {
+
+                img {
+                    width: 121px;
+                    height: 39px;
+                    margin-bottom: 14px;
+                }
+
+                p {
+                    @include font-14w;
+                    margin-bottom: 25px;
+                }
+
+                h3 {
+                    @include font-18w;
+                    margin-bottom: 14px;
+                }
+            }
+
+            .footer_bottom_left_bottom_appicone {
+                display: flex;
+                gap: 15px;
+
+                .appicone1 {
+                    cursor: pointer;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border-radius: clamp(4px, 0.417vw, 36px);
+
+                    .appicone {
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                    &:hover {
+                        background-color: black;
+                        transition: 0.6s ease-in-out;
+
+                        .appicone {
+                            transition: 0.6s ease-in-out;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_bottom_part_right {
+            display: flex;
+            gap: 120px;
+
+            .footer_bootom_right_part_data1 {
+                h3 {
+                    @include font-18w;
+                    margin-bottom: 21px;
+                }
+
+                p {
+                    cursor: pointer;
+                    @include font-15w;
+                    margin-bottom: 5px;
+
+                    &:hover {
+                        color: #fd7e14;
+                        transition: 0.6s ease-in-out;
+                    }
+                }
+            }
+
+            .footer_bootom_right_part_data3 {
+                margin-left: 100px;
+
+                h3 {
+                    @include font-18w;
+                    margin-bottom: 21px;
+                }
+
+                .contact_main {
+                    display: flex;
+                    align-items: center;
+                    gap: clamp(8px, 0.625vw, 50px);
+
+                    .contact_img_data {
+                        width: 35px;
+                        height: 35px;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: clamp(4px, 0.417vw, 36px);
+                    }
+
+                    .contact_number {
+                        p {
+                            @include font-18w;
+                        }
+
+                    }
+                }
+
+                .email_main {
+                    display: flex;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    align-items: center;
+                    gap: clamp(8px, 0.625vw, 50px);
+
+                    .email_img_data {
+                        width: 35px;
+                        height: 35px;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: clamp(4px, 0.417vw, 36px);
+                    }
+
+                    .email_number {
+                        p {
+                            @include font-15w;
+                        }
+
+                    }
+                }
+
+                .submit_email_main {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid white;
+                    border-radius: 99px;
+                    padding: 0 0px 0 15px;
+
+                    .submit_email_logo {
+                        margin-right: 10px;
+
+                        .email {
+                            width: 20px;
+                            height: 20px;
+                            color: #fff;
+                        }
+
+                    }
+
+                    .submit_email_text {
+                        input {
+                            background-color: transparent;
+                            border: none;
+                            padding: 15px 14px 15px 0px;
+                        }
+                    }
+
+                    .submit_email_button {
+                        button {
+                            border: 0px;
+                            width: 70px;
+                            height: 49px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 0px 99px 99px 0px;
+                            background-color: #fecd00;
+                            cursor: pointer;
+
+                            .submit_button {
+                                color: #000;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+
+                        &:hover button {
+                            background-color: #dc3545;
+                            transition: 0.6s ease-in-out;
+
+                            .submit_button {
+                                color: #fff;
+                                transition: 0.6s ease-in-out;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

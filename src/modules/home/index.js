@@ -10,6 +10,7 @@ import Top_colecction from './top_colection'
 import Feature_toy from './feature_toy'
 import Kidslove_us from './kids-love-us'
 import Newsartical from './news-artical'
+import Footer from '../../shared/components/footer'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Feature_toy/>
         <Kidslove_us/>
         <Newsartical/>
+        <Footer/>
       
     </div>
   )
