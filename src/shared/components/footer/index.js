@@ -30,25 +30,31 @@ export default function Footer() {
           <div className='footer_top_image'>
             <div className='footer_top_img1'>
               <img src={img1} />
+              <FaInstagram className='insta_icone' />
             </div>
             <div className='footer_top_img1'>
               <img src={img2} />
+              <FaInstagram className='insta_icone' />
 
             </div>
             <div className='footer_top_img1'>
               <img src={img3} />
+              <FaInstagram className='insta_icone' />
 
             </div>
             <div className='footer_top_img1'>
               <img src={img3} />
+              <FaInstagram className='insta_icone' />
 
             </div>
             <div className='footer_top_img1'>
               <img src={img4} />
+              <FaInstagram className='insta_icone' />
 
             </div>
             <div className='footer_top_img1'>
               <img src={img1} />
+              <FaInstagram className='insta_icone' />
 
             </div>
 
@@ -134,6 +140,9 @@ export default function Footer() {
             </div>
 
           </div>
+          <div className='footer_ending'>
+            <p>@2024 All Rights Copyright <a>Toys Store.</a> Design & Developed By <a>UIPARADOX</a></p>
+          </div>
         </div>
 
       </div>
@@ -141,3 +150,4 @@ export default function Footer() {
     </div>
   )
 }
+
