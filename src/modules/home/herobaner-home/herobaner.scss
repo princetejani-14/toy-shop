@@ -472,7 +472,7 @@
 
 @media(max-width:576px) {
     .herobaner_main {
-
+        
         .herobaner_img_center {
             width: 349px;
             height: 313px;
@@ -504,6 +504,16 @@
                             display: none;
                         }
 
+                    }
+                    .herobaner_center_main_text_button{
+                        .herobaner_center_main_text_button_left{
+                            width: 120px;
+                        }
+                        .herobaner_center_main_text_button_right{
+                            button{
+                                width: 120px;
+                            }
+                        }
                     }
                 }
 
@@ -538,6 +548,16 @@
                         }
 
                     }
+                    .herobaner_center_main_text_button{
+                        .herobaner_center_main_text_button_left{
+                            width: 120px;
+                        }
+                        .herobaner_center_main_text_button_right{
+                            button{
+                                width: 120px;
+                            }
+                        }
+                    }
                 }
 
             }
@@ -569,6 +589,16 @@
                             display: none;
                         }
 
+                    }
+                    .herobaner_center_main_text_button{
+                        .herobaner_center_main_text_button_left{
+                            width: 120px;
+                        }
+                        .herobaner_center_main_text_button_right{
+                            button{
+                                width: 120px;
+                            }
+                        }
                     }
                 }
 

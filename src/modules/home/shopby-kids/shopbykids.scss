@@ -44,14 +44,15 @@
      }
      .shopbt_kids_main{
           margin-bottom: 20px;
-          padding: 0 28px;
+          padding: 0 20px;
           .shopbt_kids_box1{
                display: grid;
                grid-template-columns: repeat(3, 1fr);
-               gap: 6px;
+               column-gap: 10px;
+               row-gap: 15px;
                button{
                     @include btn-white-purpole;
-                    width: 100px;
+                    width: 110px;
                     height: 38px;
                }
           }

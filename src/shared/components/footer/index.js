@@ -13,6 +13,8 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { BsTelephone } from "react-icons/bs";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { BsSend } from "react-icons/bs";
+
 
 
 
@@ -131,7 +133,7 @@ export default function Footer() {
                     <input type='email' placeholder='Enter Your Email' className='ok'></input>
                   </div>
                   <div className='submit_email_button'>
-                    <button><CiLocationArrow1 className='submit_button' /></button>
+                    <button><BsSend  className='submit_button' /></button>
                   </div>
 
                 </div>

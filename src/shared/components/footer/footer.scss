@@ -238,6 +238,8 @@
                         input {
                             background-color: transparent;
                             border: none;
+                            outline: none;
+                            color: white;
                             padding: 15px 14px 15px 0px;
 
                             &::placeholder {

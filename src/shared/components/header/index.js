@@ -64,7 +64,7 @@ export default function Header() {
             </div>
             <div className='header_main2_right'>
               <div className='header_main_icone'>
-                <BsTelephone className='header_main_icone_telephone'/>
+                <BsTelephone className='header_main_icone_telephone' />
               </div>
               <div className='header_main_text'>
                 <p>(323)576-1942</p>
@@ -75,7 +75,7 @@ export default function Header() {
                 <p>Menu</p>
               </div>
               <div className='header_main_text_resposive'>
-              <IoReorderThreeOutline className='header_main_text_resposive_threeline' />
+                <IoReorderThreeOutline className='header_main_text_resposive_threeline' />
 
               </div>
             </div>

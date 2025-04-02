@@ -1,4 +1,5 @@
 @import '../../../scss/main';
+
 .toy_shop_header_main {
     display: flex;
     justify-content: space-between;
@@ -34,6 +35,8 @@
             }
 
             input {
+                width: 537px;
+                outline: none;
                 border: 0px;
                 font-size: 17px;
                 font-weight: 400;
@@ -105,6 +108,7 @@
                 color: #0f0f0f;
                 font-size: 12px;
                 font-weight: 400;
+
                 &:hover {
                     color: #fd7e14;
                     transition: ease-in-out 0.3s;
@@ -123,6 +127,7 @@
 
 .bg_header_bottom {
     background-color: #f7f7f3;
+
     .header_main2 {
         padding: 15px 0;
         display: flex;
@@ -135,10 +140,12 @@
             align-items: center;
             @include font-15b;
             cursor: pointer;
+
             :hover {
                 color: #fd7e14;
                 transition: ease-in-out 0.3s;
             }
+
             p {
                 margin: 0;
             }
@@ -163,17 +170,20 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            .header_main_icone{
-                .header_main_icone_telephone{
+
+            .header_main_icone {
+                .header_main_icone_telephone {
                     width: 20px;
                     height: 20px;
                 }
             }
-            .header_main_text{
+
+            .header_main_text {
                 @include font-14b;
             }
         }
-        .header_main2_right_responsive{
+
+        .header_main2_right_responsive {
             display: none;
         }
     }
@@ -195,46 +205,54 @@
         }
 
     }
+
     .bg_header_bottom {
         background-color: #f7f7f3;
+
         .header_main2 {
             padding: 8px 18px;
-    
+
             .header_main2_left {
                 display: none;
-                
-    
+
+
             }
-    
-            .header_main2_right{
+
+            .header_main2_right {
                 display: flex;
                 gap: 10px;
-                .header_main_icone{
-                    .header_main_icone_telephone{
+
+                .header_main_icone {
+                    .header_main_icone_telephone {
                         width: 20px;
                         height: 20px;
                     }
                 }
-                .header_main_text{
+
+                .header_main_text {
                     @include font-14b;
                 }
             }
-            .header_main2_right_responsive{
+
+            .header_main2_right_responsive {
                 display: block;
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                .header_main_icone_resposive{
+
+                .header_main_icone_resposive {
                     font-size: 16px;
                     font-weight: 400;
                     color: #0f0f0f;
-                    
+
                 }
-                .header_main_text_resposive{
+
+                .header_main_text_resposive {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    .header_main_text_resposive_threeline{
+
+                    .header_main_text_resposive_threeline {
                         width: 30px;
                         height: 30px;
 

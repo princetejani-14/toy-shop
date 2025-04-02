@@ -197,6 +197,11 @@
                 align-items: center;
                 background-color: #f7f3f3;
                 border-radius: clamp(2px, 0.208vw, 28px);
+                padding: 0 15px;
+                p{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
 
             }
 

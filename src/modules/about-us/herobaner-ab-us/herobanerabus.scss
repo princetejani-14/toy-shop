@@ -1,0 +1,100 @@
+@import '../../../scss/main';
+.baju {
+    background-color: #BEE1F1;;
+    .herobaner_about_us_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 29px;
+        .herobaner_about_us_left_img{
+            width: 399px;
+            height: 253px;
+            img{
+                width: 100%;
+                height: 100%
+            }
+
+        }
+        .herobaner_about_us_center_text{
+            h1{
+                @include font-40b;
+                font-size: 48px;
+                font-weight: 700;
+            }
+        }
+        .herobaner_about_us_right_img{
+            width: 399px;
+            height: 253px;
+            img{
+                width: 100%;
+                height: 100%
+            }
+        }
+    }
+}
+.herobaner_about_us_main2{
+    height: 54.17px;
+    width: 100%;
+    margin-top: -3px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width:768px){
+    .baju {
+        .herobaner_about_us_main {
+            flex-direction: column;
+            .herobaner_about_us_left_img{
+                width: 474px;
+                height: 301px;
+            }
+            .herobaner_about_us_center_text{
+                h1{
+                    @include font-40b;
+                    font-size: 32px;
+                    font-weight: 700;
+                }
+            }
+            .herobaner_about_us_right_img{
+                width: 474px;
+                height: 301px;
+                
+            }
+        }
+    }
+    .herobaner_about_us_main2{
+        height: 26px;
+        width: 100%;
+        margin-top: -3px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media(max-width:576px){
+    .baju {
+        .herobaner_about_us_main {
+            .herobaner_about_us_left_img{
+                width: 156px;
+                height: 99px;
+            }
+            .herobaner_about_us_right_img{
+                display: none;
+            }
+        }
+    }
+    .herobaner_about_us_main2{
+        height: 13px;
+        width: 100%;
+        margin-top: -6px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
